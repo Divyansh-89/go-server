@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Server</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, sans-serif;
+        color: #172033;
+        background: #f3f6fb;
+      }
+
+      body {
+        box-sizing: border-box;
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem;
+        place-items: center;
+      }
+
+      main {
+        width: min(100%, 38rem);
+        padding: 2.5rem;
+        border: 1px solid #dce3ee;
+        border-radius: 1rem;
+        background: #fff;
+        box-shadow: 0 1rem 2.5rem #17203312;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 6vw, 3rem);
+      }
+
+      p {
+        color: #526078;
+        line-height: 1.6;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background: #1769e0;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus-visible {
+        background: #0e53b8;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to Go Server</h1>
+      <p>This is the home page. Open the form to enter and submit your details.</p>
+      <a href="/form.html">Open the form</a>
+    </main>
+  </body>
+</html>

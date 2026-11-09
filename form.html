@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form | Go Server</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, sans-serif;
+        color: #172033;
+        background: #f3f6fb;
+      }
+
+      body {
+        box-sizing: border-box;
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem;
+        place-items: center;
+      }
+
+      main {
+        width: min(100%, 34rem);
+        padding: 2.5rem;
+        border: 1px solid #dce3ee;
+        border-radius: 1rem;
+        background: #fff;
+        box-shadow: 0 1rem 2.5rem #17203312;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      p {
+        color: #526078;
+        line-height: 1.6;
+      }
+
+      form {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      label {
+        display: grid;
+        gap: 0.4rem;
+        font-weight: 600;
+      }
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #bdc8d8;
+        border-radius: 0.5rem;
+        color: inherit;
+        font: inherit;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #1769e0;
+        outline: 2px solid #1769e033;
+      }
+
+      textarea {
+        min-height: 8rem;
+        resize: vertical;
+      }
+
+      button {
+        justify-self: start;
+        padding: 0.75rem 1rem;
+        border: 0;
+        border-radius: 0.5rem;
+        color: #fff;
+        background: #1769e0;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button:hover,
+      button:focus-visible {
+        background: #0e53b8;
+      }
+
+      a {
+        color: #1769e0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Contact form</h1>
+      <p>Fill in your details below.</p>
+      <form action="/form" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p><a href="/">Back to home</a></p>
+    </main>
+  </body>
+</html>
