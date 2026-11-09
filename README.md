@@ -100,26 +100,3 @@ POST request successful
 Name = Divyansh
 Address = Bhopal
 ```
-
-## Concepts Learned
-
-Through this project, I explored:
-
-- How HTTP request-response communication works.
-- What `http.Request` and `http.ResponseWriter` do.
-- How HTTP methods like GET and POST work.
-- How to create HTTP handlers.
-- How routing works using `http.HandleFunc`.
-- How to serve static files using `http.FileServer`.
-- How to parse form data using `r.ParseForm()`.
-- How to retrieve submitted values using `r.FormValue()`.
-- How to handle errors and HTTP status codes.
-- How `http.ListenAndServe()` starts an HTTP server.
-
-## What's Next?
-
-Continuing to explore Go backend development by building REST APIs, working with JSON, implementing middleware, and connecting databases — all using Go's standard library before moving to frameworks.
-
----
-
-**Built while learning Go backend development.**
